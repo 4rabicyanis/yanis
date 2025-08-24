@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pembelajaran Bahasa Arab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Naskh+Arabic:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 24px;
+    }
+    header .logo {
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #0f172a;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1e293b;
+      font-weight: 600;
+      transition: color .2s;
+    }
+    nav a:hover {
+      color: #16a34a;
+    }
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: white;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .hero .ar {
+      font-family: 'Noto Naskh Arabic', serif;
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+    }
+    .hero .cta {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background .2s;
+    }
+    .hero .cta:hover {
+      background: #1e293b;
+    }
+    .kelas {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .kelas h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform .2s, box-shadow .2s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #16a34a;
+    }
+    .card p {
+      color: #475569;
+      margin-bottom: 14px;
+    }
+    .card a {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #22c55e;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .9rem;
+      transition: background .2s;
+    }
+    .card a:hover {
+      background: #15803d;
+    }
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Bahasa Arab</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Kurikulum</a>
+      <a href="#kelas">Kelas 1</a>
+      <a href="#kelas">Kelas 2</a>
+      <a href="#kelas">Kelas 3</a>
+      <a href="#kelas">Kelas 4</a>
+      <a href="#kelas">Kelas 5</a>
+      <a href="#kelas">Kelas 6</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="ar">اَلتَّعَلُّمُ اللُّغَة العَرَبِيَّة</div>
+    <h1>Pembelajaran Bahasa Arab</h1>
+    <p>Belajar Bahasa Arab lebih mudah dan menyenangkan untuk Kelas 1–6 Madrasah.</p>
+    <a href="#kelas" class="cta">Mulai Belajar</a>
+  </section>
+
+  <section id="kelas" class="kelas">
+    <h2>Pilih Kelas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Kelas 1</h3>
+        <p>Pengenalan huruf, kosakata dasar, dan salam.</p>
+        <a href="#">Masuk</a>
+      </div>
+      <div class="card">
+        <h3>Kelas 2</h3>
+        <p>Kosakata sehari-hari, ungkapan sederhana.</p>
+        <a href="#">Masuk</a>
+      </div>
+      <div class="card">
+        <h3>Kelas 3</h3>
+        <p>Percakapan ringan, tata bahasa dasar.</p>
+        <a href="#">Masuk</a>
+      </div>
+      <div class="card">
+        <h3>Kelas 4</h3>
+        <p>Teks bacaan pendek, latihan menulis.</p>
+        <a href="#">Masuk</a>
+      </div>
+      <div class="card">
+        <h3>Kelas 5</h3>
+        <p>Dialog, percakapan sehari-hari lebih kompleks.</p>
+        <a href="#">Masuk</a>
+      </div>
+      <div class="card">
+        <h3>Kelas 6</h3>
+        <p>Pemahaman teks, tata bahasa lanjutan.</p>
+        <a href="#">Masuk</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Pembelajaran Bahasa Arab | Dibuat dengan ❤ untuk Madrasah
+  </footer>
+</body>
+</html>
